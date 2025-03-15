@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+}
+
+.container{
+  padding: 2.5rem 0 5rem 0;
+  overflow: hidden;
+}
+
+/* custom header */
+.header {
+  width: 600px;
+  font-family: 'peckham';
+  font-size: 58px;
+  color: #ffffff;
+}
+
+.header3 {
+  width: 100%;
+  font-family: 'peckham';
+  font-size: 58px;
+  color: #ffffff;
+}
+
+.header2 {
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #808080;
+}
+
+li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #808080;
+}
+
+.letterSpace {
+  letter-spacing: 4px;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2BF6FA;
+  color: #000000;
+  padding: 10px 0px;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+}
+
+.title {
+  background-color: #2BF6FA;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.info {
+  background-color: #2BF6FA;
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+
+.text {
+  color: #2BF6FA;
+}
+
+/* home */
+.rate {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: start;
+  width: 600px;
+  gap: 30px;
+}
+.bg {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+}
+
+.bg-image{
+  background-image: url('/assets/bg.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 85%;
+}
+
+.waterMask {
+  font-family: 'peckham';
+  font-size: 105px;
+  color: #ffffff;
+  opacity: 8%;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1B1B1B;
+  border-radius: 100%;
+  width: 50px;
+}
+
+.kitBg {
+ background-color: #ffffff;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.img {
+  width: 484px;
+  height: 423px;
+  object-fit: contain;
+}
+
+.recoveryContainer{
+  background-image: url('/assets/recovery-banner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1440px;
+  height: 438px;
+  overflow: hidden;
+
+}
+
+.recovery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.recoveryRectangle {
+  padding-left: 200px;
+}
+
+.recoveryText {
+  font-family: 'peckham';
+  font-size: 75px;
+  font-weight: 800;
+  -webkit-text-fill-color: rgb(6, 4, 4); /* Will override color (regardless of order) */
+  -webkit-text-stroke: 0.5px rgb(245, 245, 245);
+}
+
+.bgimg {
+  position:absolute;
+  background-image: url('/assets/bgImg.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1440px;
+  height: 795px;
+  overflow: hidden;
+}
+
+
+
+/* custom font */
+@font-face {
+
+  font-family: 'Peckham';
+
+  src: url('/font/PeckhamPress-Trial.otf'); /* Adjust path to your font file */
+
+  font-weight: bold;
+
+  font-style: bold;
+
+}
