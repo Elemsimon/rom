@@ -5,11 +5,11 @@ import GetData from './GetData'
 const WhyChoose = () => {
   return (
     <div className='container'>
-      <div className='d-flex justify-content-between '>
+      <div className='d-flex justify-content-between whychoose'>
         <div className='bg'>
-          <img src={Gun} alt="Image" className=''/>
+          <img src={Gun} alt="Image" className='img'/>
         </div>
-        <div className='d-flex flex-column col-6'>
+        <div className='d-flex flex-column col-lg-6'>
           <h1 className='header3 fs-1 w-100 mb-4'>What makes this gun different from the rest</h1>
           <div className='d-flex justify-content-end gap-3'>
             <div className='w-50'>
