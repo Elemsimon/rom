@@ -7,7 +7,7 @@ const GetData = ({title, icon}) => {
         <img src={icon} alt="icon" className='icon'  />
       </div>
       <div className='d-flex align-items-center'>
-        <p className='d-flex fs-6 text-wrap'>{title}</p>
+        <p className='d-flex fs-6 text-wrap w-100'>{title}</p>
       </div>
     </div>
   )
