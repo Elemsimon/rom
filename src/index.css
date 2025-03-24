@@ -7,7 +7,13 @@
 
 .container{
   padding: 2.5rem 0 5rem 0;
-  overflow: hidden;
+}
+
+/* hero */
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* custom header */
@@ -31,6 +37,7 @@
 }
 
 p {
+  width: 75%;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   color: #808080;
@@ -47,6 +54,7 @@ li {
 }
 
 .button {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,7 +112,7 @@ li {
 
 .waterMask {
   font-family: 'peckham';
-  font-size: 105px;
+  font-size: 100px;
   color: #ffffff;
   opacity: 8%;
 }
@@ -116,6 +124,9 @@ li {
   background-color: #1B1B1B;
   border-radius: 100%;
   width: 50px;
+}
+.kit {
+  margin-top: 100px;
 }
 
 .kitBg {
@@ -142,9 +153,8 @@ li {
   background-position: center;
   background-repeat: no-repeat;
   width: 1440px;
-  height: 438px;
+  height: auto;
   overflow: hidden;
-
 }
 
 .recovery {
@@ -166,18 +176,357 @@ li {
   -webkit-text-fill-color: rgb(6, 4, 4); /* Will override color (regardless of order) */
   -webkit-text-stroke: 0.5px rgb(245, 245, 245);
 }
+.recovery-image {
+  width: 100%;
+  object-fit: contain;
+}
 
 .bgimg {
-  position:absolute;
+  position: relative;
   background-image: url('/assets/bgImg.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  object-fit: cover;
   width: 1440px;
   height: 795px;
   overflow: hidden;
 }
 
+.CallToAction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.vidIcon {
+  cursor: pointer;
+  border-radius: 100%;
+  box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.472);
+}
+
+.smartHit{
+  width: 1440px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.footerWrapper {
+  padding: 50px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerText {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.video {
+    width: 1200px;
+    height: 700px;
+  }
+
+/* @media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+} */
+
+@media screen and (width: 1024px) {
+  .waterMask {
+    font-size: 80px;
+  }
+  .smartHit{
+    width: 1024px;
+    height: auto;
+    object-fit: contain;
+  }
+  .kitImg{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    width: 600px;
+    margin-left: -50px;
+  }
+  .recovery { 
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .recoveryContainer{
+    width: 1024x;
+    height: auto;
+  }
+  .recoveryRectangle {
+    padding-left: 30px;
+  }
+  .recovery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-left: -90px;
+  }
+  .bgimg {
+    position: relative;
+    background-image: url('/assets/bgImg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    width: 1024px;
+    height: 565px;
+    overflow: hidden;
+  }
+  .CallToAction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .video {
+    width: 800px;
+    height: 500px;
+  }
+}
+
+@media screen and (width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .bg {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .waterMask {
+    font-size: 60px;
+  }
+  .info1 {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .whychoose {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .benefit {
+    display: flex;
+    flex-direction: column;
+  }
+  .smartHit{
+    width: 770px;
+    height: auto;
+    object-fit: contain;
+  }
+  .kit {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .kitImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+  }
+  .kitLi {
+    margin-bottom: 100px;
+  }
+  .recoveryContainer{
+    width: auto;
+    height: auto;
+  }
+  .recovery {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .recoveryRectangle {
+    padding-left: 10px;
+  }
+  .recoveryText {
+    font-family: 'peckham';
+    font-size: 80px;
+    font-weight: 800;
+    -webkit-text-fill-color: rgb(6, 4, 4); /* Will override color (regardless of order) */
+    -webkit-text-stroke: 0.5px rgb(245, 245, 245);
+  }
+  .recovery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .bgimg {
+    position: relative;
+    background-image: url('/assets/bgImg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    width: 100%;
+    height: 425px;
+    overflow: hidden;
+  }
+  .CallToAction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .video {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header {
+    width: 100%;
+    font-size: 40px;
+  }
+  .header3 {
+    width: 100%;
+    font-size: 40px;
+  }
+  .header2 {
+    font-size: 20px;
+  }
+  p{
+    width: 100%;
+    font-size: 14px;
+  }
+  .rate {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    width: 100%;
+    gap: 10px;
+  }
+  .bg {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+  }
+  .waterMask {
+    font-size: 37px;
+  }
+  .info1 {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .whychoose {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .benefit {
+    display: flex;
+    flex-direction: column;
+  }
+  .img {
+    width: 350px;
+    height: 423px;
+    object-fit: contain;
+    margin-bottom: -70px;
+    margin-top: -80px;
+  }
+  .smartHit{
+    width: 425px;
+    height: auto;
+    object-fit: contain;
+  }
+  .kit {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .kitImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+  }
+  .kitLi {
+    margin-bottom: 80px;
+  }
+  .recoveryContainer{
+    width: auto;
+    height: auto;
+  }
+  .recovery { 
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .recoveryRectangle {
+    padding-left: 0px;
+  }
+  .recoveryText {
+    font-family: 'peckham';
+    font-size: 48px;
+    font-weight: 800;
+    -webkit-text-fill-color: rgb(6, 4, 4); /* Will override color (regardless of order) */
+    -webkit-text-stroke: 0.5px rgb(245, 245, 245);
+  }
+  .recovery-image {
+    width: 450px;
+    object-fit: contain;
+  }
+  .bgimg {
+    position: relative;
+    background-image: url('/assets/bgImg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+  }
+  .CallToAction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .vidIcon {
+    width: 30px;
+  }
+  .video {
+    width: 300px;
+    height: 200px;
+  }
+}
 
 
 /* custom font */
@@ -190,5 +539,7 @@ li {
   font-weight: bold;
 
   font-style: bold;
+
+  font-display: swap;
 
 }

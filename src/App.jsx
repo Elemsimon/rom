@@ -1,5 +1,6 @@
 import Benefits from "./components/Benefits"
 import CallToAction from "./components/CallToAction"
+import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Info from "./components/Info"
 import Kit from "./components/Kit"
@@ -11,7 +12,7 @@ import WhyChoose from "./components/WhyChoose"
 function App() {
 
   return (
-    <div>
+    <div style={{overflowX: 'hidden'}}>
       <NavBar />
       <Hero />
       <Info />
@@ -21,6 +22,8 @@ function App() {
       <Kit />
       <Recovery />
       <CallToAction />
+      <Footer />
+      
     </div>
   )
 }
