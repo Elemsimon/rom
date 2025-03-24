@@ -4,7 +4,7 @@ import GetData from './GetData'
 
 const Benefits = () => {
   return (
-    <div className='container'>
+    <div className='container' data-aos="fade" data-aos-delay="700">
       <div className='d-flex justify-content-between gap-3 benefit'>
         <div className='d-flex flex-column col-lg-6'>
           <h1 className='header3 fs-1 w-100 mb-4'>What makes this gun different from the rest</h1>

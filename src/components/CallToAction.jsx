@@ -1,19 +1,53 @@
-import React from 'react'
-import Button from './Button'
-import videoIcon from '/assets/21.svg'
-import bgImg from '/assets/bgImg.png'
+import React, { useState, useEffect, useRef } from 'react';
+import videoIcon from '/assets/21.svg';
 
 const CallToAction = () => {
-  return (
-    <div>
-      <img src={bgImg} alt="Background Image" style={{backgroundSize:'cover', position:'absolute'}}/>
-      <div style={{position:'relative', zIndex:'1'}}>       
-        <img src={videoIcon} alt="Video Icon" />
-        <Button title="BUY NOW"/>      
-      </div>
-      
-    </div>
-  )
-}
+  const [showVideo, setShowVideo] = useState(false);
+  const videoWrapperRef = useRef(null);
 
-export default CallToAction
+  const toggleVideo = () => {
+    setShowVideo(!showVideo);
+  };
+
+  const handleClickOutside = (event) => {
+    if (videoWrapperRef.current && !videoWrapperRef.current.contains(event.target)) {
+      setShowVideo(false);
+    }
+  };
+
+  useEffect(() => {
+    if (showVideo) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [showVideo]);
+
+  return (
+    <>
+      <div className='bgimg CallToAction' data-aos="fade" data-aos-delay="700">
+        {!showVideo ? (
+          <img src={videoIcon} className='vidIcon' alt="Video Icon" onClick={toggleVideo} />
+        ) : (
+          <div className="video-wrapper" ref={videoWrapperRef}>
+            <iframe
+              className='video'
+              src="https://www.youtube.com/embed/SJcj6nFIObA?autoplay=1&si=ErwZc9J78If4FG-c"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            
+          </div>
+        )}
+      </div>
+    </>
+  );
+};
+
+export default CallToAction;
