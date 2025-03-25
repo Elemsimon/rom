@@ -4,7 +4,7 @@ import athletes from '/assets/athletes.svg'
 
 const Info = () => {
   return (
-    <div className='container d-flex justify-content-center align-items-center'>
+    <div className='container d-flex justify-content-center align-items-center' data-aos="fade" data-aos-delay="700">
       <div className='d-flex flex-column gap-5'>
         <div className='d-flex flex-row justify-content-center align-items-center gap-5'>
           <img src={moneyBack} alt="moneyBack" className='info1' />

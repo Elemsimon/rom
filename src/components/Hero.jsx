@@ -7,11 +7,11 @@ import zip from '/assets/zip.svg'
 
 const Hero = () => {
   return (
-    <div className='container'>
+    <div className='container' data-aos="fade" data-aos-delay="700">
       <div className='hero'>
         <div className='d-flex flex-column'>
           <h1 className='header'>Trusted by Athletes</h1>
-          <p>Integrated with A.I to ensure your massage pressure is never compromised</p>
+          <p>Integrated with AI to ensure your massage pressure is never compromised</p>
           <div className='rate py-4'>
             <div className='d-flex flex-column'>
               <h2 className='header2 fw-bold fs-6'><span className='fs-2 letterSpace'>18</span> Months</h2>
@@ -38,8 +38,8 @@ const Hero = () => {
             <img src={zip} alt="" />
           </div>
         </div>
-        <div className='bg'>
-          <img src={Img1} alt="Image" className='bg-image'/>
+        <div className='bg' data-aos="fade-up" data-aos-delay="400">
+          <img src={Img1} alt="Image" className='bg-image' loading="lazy"/>
         </div>
       </div>
     </div>

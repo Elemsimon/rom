@@ -4,7 +4,7 @@ import GetData from './GetData'
 
 const WhyChoose = () => {
   return (
-    <div className='container'>
+    <div className='container' data-aos="fade" data-aos-delay="700">
       <div className='d-flex justify-content-between whychoose'>
         <div className='bg'>
           <img src={Gun} alt="Image" className='img'/>

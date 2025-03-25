@@ -3,9 +3,8 @@ import { kitData } from '../data'
 
 const Kit = () => {
   return (
-    <div className='container' style={{marginTop:'100px'}}>
-      <div className='d-flex justify-content-between kit gap-3
-      4'>
+    <div className='container' data-aos="fade" data-aos-delay="700">
+      <div className='d-flex justify-content-between kit gap-34'>
         <div style={{marginTop:'-90px', objectFit:'cover'}}>
           <img src={kit} alt="Image" className='kitImg' />
         </div>
